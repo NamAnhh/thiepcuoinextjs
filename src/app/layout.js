@@ -4,7 +4,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Thiệp mời",
+  title: "Thiệp mời đám cưới Nam Anh - Hồng Hạnh",
   description: "Đám cưới Nam Anh - Hồng Hạnh",
 };
 
