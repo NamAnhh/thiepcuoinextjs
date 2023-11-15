@@ -19,6 +19,7 @@ import item5 from "./assets/images/item5.jpg";
 import bgDresscode from "./assets/images/bgDresscode.png";
 import bgLichTrinh from "./assets/images/bgLichTrinh.png";
 import Image from "next/image";
+import Head from "next/head";
 
 export const cx = (...className) => {
   return className.filter(Boolean).join(" ").trim();
@@ -34,10 +35,20 @@ function App() {
   };
   return (
     <div className={styles.mainContent}>
-      {/* <meta charSet='utf-8' />
+      <Head>
+        <meta charSet='utf-8' />
         <title>Đám cưới Nam Anh - Hồng Hạnh</title>
+        <meta
+          property='og:title'
+          content='Đám cưới Nam Anh - Hồng Hạnh'
+          key='title'
+        />
         <meta name='description' content='Đám cưới chúng mình...' />
-        <link rel='canonical' href={bg1} /> */}
+        <meta property='image' content={bg1} />
+        <meta property='og:image' content={bg1} />
+        <link rel='canonical' href={bg1} />
+      </Head>
+
       {/* cover 1 */}
       <div className={styles.cover1}>
         <Image className={styles.img} src={bg1} alt='' />
